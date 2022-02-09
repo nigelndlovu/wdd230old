@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Nigel Ndlovu - WDD230</title>
+	<meta
+		name="description"
+		content="Assignment portal for Nigel Ndlovu in WDD230: Web Frontend Development at BYUI"
+	/>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
+</head>
+<body>
+	<header>
+		<div class="tophead">
+			<div class="logo">
+				<img src="images/byo_logo.png" alt="Logo" />
+				<section class="headings">
+					<h1>Bulawayo City Chamber of Commerce</h1>
+				</section>
+			</div>
+			<nav>
+    		<ul class="navigation">
+					<li><a class="ham" href="#">Menu</a></li>
+       		<li><a href="index.html">Home</a></li>
+       		<li><a href="#">About</a></li>
+       		<li><a href="#">Join</a></li>
+       		<li><a href="#">Contact Us</a></li>
+     		</ul>
+    	</nav>
+			<div class="social">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+			</div>
+		</div>
+		<div class="headerdate">
+			<p class="curdate"><span id="todaydate"></span></p>
+		</div>
+	</header>
+	<main>
+		<div class="mainsection">
+			<div class="section1">Events</div>
+			<div class="section2">Weather</div>
+			<div class="section3">Join</div>
+			<div class="section4">Hero image and call to action</div>
+			<div class="section5">News</div>
+			<div class="section6">Spotlights</div>
+		</div>
+	</main>
+	<footer>
+		<div class="wrapper">
+			<div class="logo">
+				<img src="images/byo_logo.png" alt="Logo" />
+			</div>
+			<div class="address">
+				<p>9418 Mavondo Road, Bulawayo, Zimbabwe</p>
+			</div>
+			<div class="contacts">
+				<p>info@bccc.co.zw</p>
+				<p>+(263) 779 071 607</p>
+			</div>
+			<div class="mapouter">
+				<a href="https://www.google.co.zw/maps/place/Mavondo+Rd,+Bulawayo/@-20.1786327,28.5005081,17z/data=!3m1!4b1!4m5!3m4!1s0x1eb55213102a1d61:0x434d7f74d8057c42!8m2!3d-20.1786327!4d28.5026968">Click For Map</a><br>
+			</div>
+			<div class="signnote">
+				&copy; <span id="getyear"></span> | Nigel Ndlovu | Zimbabwe |
+    		<a id="byuilink" href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+    	</div>
+			<div class="lasmod">
+				<p>Last modified: <span id="currentdate"></span></p>
+			</div>
+		</div>
+	</footer>
+	<script src="js/index.js"></script>
+</body>
+</html>
