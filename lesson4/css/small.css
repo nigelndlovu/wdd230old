@@ -124,8 +124,6 @@ header nav {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
   font-size: 0.8rem;
   padding-top: 5px;
   max-width: 1350px;
@@ -133,24 +131,23 @@ main {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-  
-main section {
-  margin: 0.5rem;
-  border: 1px solid rgb(182, 183, 184);
-  padding: 0 1rem;
-  background-color: rgb(219, 227, 235);
-}
-  
-main section:nth-child(2) {
-  display: none;
-  margin: 0.5rem;
-}
-  
-main section img {
-  display: none;
-  margin: 0.5rem;
-  box-shadow: 5px 8px #0d1b24;
-  max-width: 200px;
+
+.section1 { grid-area: event; }
+.section2 { grid-area: weather; }
+.section3 { grid-area: join; }
+.section4 { grid-area: hero; }
+.section5 { grid-area: news; }
+.section6 { grid-area: spotlight; }
+
+.mainsection {
+  display: grid;
+  grid-template-areas: 
+    'event hero hero spotlight'
+    'weather hero hero spotlight'
+    'join news news spotlight';
+  grid-gap: 10px;
+  background-color: #fff;
+  padding: 10px;
 }
 
 .mainsection > div {
