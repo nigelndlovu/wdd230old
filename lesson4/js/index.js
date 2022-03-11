@@ -37,4 +37,4 @@ document.querySelector('#getyear').textContent = year;
 const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 document.getElementById("todaydate").textContent = fulldate;
 document.getElementById("currentdate").textContent = fulldate;
-// ****************************
+// *****************************
